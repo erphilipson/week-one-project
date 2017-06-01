@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Bear Creek Ceramics - Newsletter</title>
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <style> @import url('https://fonts.googleapis.com/css?family=Lora|Roboto|Merriweather:100,300,300i,400,400i');</style>
+</head>
+
+<body class="newsletter-body">
+  <nav>
+    <div class="nav-row">
+      <div class="nav-item">
+        <a href="../index.html">Home</a>
+      </div>
+      <div  class="nav-item">
+        <a href="../about/index.html">About</a>
+      </div>
+      <div class="nav-item current-link">
+        <a href="index.html">Newsletter</a>
+      </div>
+    </div>
+    <div class="logo" id="vase-logo"></div>
+  </nav>
+
+
+  <section class="item">
+    <div class="form-item">
+      <div class="form-heading">
+        <div class="form-header">
+          <span>Sign Up for Our Weekly Newsletter</span>
+        </div>
+        <div class="form-subheader"
+          <span>Stay up-to-date with events, activities, news, and specials</span>
+        </div>
+      </div>
+
+      <form action="" method="POST">
+        <fieldset class="newsletter">
+          <input type="text" id="nameInput" name="name" placeholder="Name">
+          <br>
+          <br>
+          <br>
+          <input type="email" id="emailInput" name="email" placeholder="Email">
+          <button type="submit" id=signupButton>Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <script type="text/javascript">
+  var nameInput = document.getElementById('nameInput');
+  var emailInput = document.getElementById('emailInput');
+  var signupButton = document.getElementById('signupButton');
+  signupButton.addEventListener('click', function(e) {
+    var nameVal = nameInput.value;
+    var emailVal = emailInput.value;
+    if (nameVal && emailVal) {
+      alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+      nameInput.value = "";
+      emailInput.value = "";
+    } else {
+      alert('We would love for you to sign up, please provide both your name and email address.');
+    }
+  });
+
+</script>
+</body>
+</html>

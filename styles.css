@@ -1,0 +1,365 @@
+   /*Commented items aren't needed*/
+
+
+body {
+  /*max-width: 1280px;*/
+  background-color: #F1F1E8;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+
+}
+
+.nav-row {
+  /*position: fixed;*/
+  background-color: white;
+  /*position: fixed;*/
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 2px solid #E3E2DD;
+  /*width: 100%;*/
+
+}
+
+.nav-item a {
+  color: #2B2F26;
+  font: 16px Roboto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+.current-link a {
+  color: #918672;
+}
+
+.nav-item a:hover {
+  color: #CD5D67;
+}
+
+#vase-logo {
+  content: url(images/bent-creek-logo.png);
+  height: 35px;
+  position: fixed;
+  top: 10px;
+}
+
+header.page-header {
+  background: #F1F1E8;
+  padding-top: 3%;
+}
+
+main {
+  background: #F1F1E8;
+  color: #131511;
+}
+
+.newsletter-body {
+  overflow: hidden;
+}
+
+.item {
+  background-image: url(images/background-2.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30%;
+  margin-left: -1%;
+  margin-right: -1%;
+  height: 500px;
+
+}
+
+.form-item{
+  background-color: white;
+  height: 350px;
+  position: relative;
+  bottom: 50%;
+  padding: 4%;
+}
+
+.form-header {
+  text-align: center;
+  font: 30px Merriweather;
+  font-weight: 300;
+  padding-top: 3%;
+}
+
+.form-subheader {
+  text-align: center;
+  font: 18px Merriweather;
+  font-weight: 400;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.newsletter {
+  border: none;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #918672;
+  width: 100%;
+  /*padding-bottom: 1%;*/
+  padding-top: 4%;
+}
+
+input:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder{
+  color: gray;
+}
+
+input:focus::-webkit-input-placeholder{
+  color: transparent;
+  transition: .5s;
+}
+
+#nameInput {
+  font: 18px Roboto;
+  color: black;
+}
+
+#emailInput {
+  font: 18px Roboto;
+  color: black;
+}
+
+button {
+  background-color: #968772;
+  border: none;
+  position: relative;
+  left: 40%;
+  margin-top: 7%;
+  font: 20px Roboto;
+  height: 50px;
+  width: 130px;
+  color: #F1F1E8;
+  transition: .5s;
+}
+
+button:hover {
+  background: #967343;
+}
+
+
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /*padding-bottom: 10%;*/
+}
+
+h1 {
+  font: 50px Lora;
+  color: #131511;
+  margin-bottom: -30px;
+}
+
+h3 {
+  font: 30px Lora;
+  font-weight: 300;
+  color: #131511;
+}
+
+h4 {
+  font: 30px Merriweather;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+h4.about-header1 {
+  margin-bottom: -6%;
+}
+
+.main-content {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.side-img#birdhouse {
+  background-image: url(images/birdhouse.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 3%;
+  height: 120px;
+  width: 160px;
+}
+
+
+.about-txt {
+  font: 23px Merriweather;
+  font-weight:  100;
+  line-height: 175%;
+  margin-top: 8%;
+}
+
+.about-txt a {
+  color: #968772;
+}
+
+.about-txt a:hover{
+  color: #967343;
+}
+
+
+.header-img{
+  background-image: url(images/background-3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  margin-top: 3%;
+  margin-left: -3%;
+  width: 100%;
+}
+
+blockquote {
+  border-left: 2px solid #79694D;
+  font: italic 18px Merriweather;
+  line-height: 30px;
+  padding-left: 3%;
+}
+
+.div-txt {
+  background-attachment: fixed;
+  position: relative;
+  font: 60px Merriweather;
+  color: white;
+  left: 35%;
+  top: 120px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.gallery1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.product-img {
+  background-size: cover;
+  height: 367px;
+  width: 235px;
+  margin: 5px;
+}
+
+.product-img2 {
+  background-size: cover;
+  height: 240px;
+  width: 240px;
+  margin: 5px;
+}
+
+#succulents {
+  background-image: url(images/product-1.jpg);
+  height: 366px;
+  width: 733px;
+}
+
+#bowls {
+  background-image: url(images/product-2.jpg);
+}
+
+#platter {
+  background-image: url(images/product-3.jpg);
+}
+
+#cup {
+  background-image: url(images/product-4.jpg);
+}
+
+#jar {
+  background-image: url(images/product-5.jpg);
+}
+
+#wasabi {
+  background-image: url(images/product-6.jpg);
+  background-size: cover;
+  height: 240px;
+  width: 480px;
+}
+
+#sippin {
+  background-image: url(images/product-7.jpg);
+}
+
+.label-txt {
+  background-color: #30332B;
+  color: #F4F3DA;
+  padding: 10px;
+  position: relative;
+  top: 85%;
+}
+
+.aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.side-img#pots {
+  background-image: url(images/background-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 120px;
+  width: 160px;
+  top: 80px;
+}
+
+.side-txt {
+  font: 12px Merriweather;
+  position: relative;
+  top: 80px;
+  line-height: 22px;
+}
+
+
+table {
+  border-collapse: collapse;
+  font: 18px Merriweather;
+  margin-bottom: 5%;
+
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 13px;
+}
+
+
+.even-row {
+  background-color: #EFEADB;
+}
+
+footer {
+  background: #30332B;
+  color: #FAFDF3;
+  font: 16px serif;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 2%;
+  padding-right: 8%;
+  /*position: relative;*/
+  width: 100%;
+}
